@@ -22,8 +22,8 @@
 
       #dvd-logo {
         position: absolute;
-        width: 100px;
-        height: 50px;
+        width: 200px;
+        height: 100px;
         background-color: #ff0000; /* Cor inicial */
         color: white;
         font-size: 24px;
@@ -59,16 +59,15 @@
       const dvdLogo = document.getElementById("dvd-logo");
       const container = document.getElementById("dvd-container");
 
-      // Select the SVG path you want to change
-      const svgPath = dvdLogo.querySelector("svg path"); // Correct selector
+      const svgPath = dvdLogo.querySelector("svg path");
 
       // Posição inicial
       let x = 50;
       let y = 50;
 
       // Velocidade e direção iniciais
-      let xSpeed = 100;
-      let ySpeed = 100;
+      let xSpeed = 4;
+      let ySpeed = 4;
       function getRandomColor() {
         const letters = "0123456789ABCDEF";
         let color = "#";
@@ -79,11 +78,9 @@
       }
 
       function animate() {
-        // Atualiza a posição
         x += xSpeed;
         y += ySpeed;
 
-        // Aplica a nova posição ao elemento
         dvdLogo.style.left = x + "px";
         dvdLogo.style.top = y + "px";
 
@@ -99,11 +96,9 @@
           svgPath.setAttribute("fill", getRandomColor()); // Change SVG color
         }
 
-        // Continua a animação no próximo frame
         requestAnimationFrame(animate);
       }
 
-      // Inicia a animação
       animate();
     </script>
   </body>
