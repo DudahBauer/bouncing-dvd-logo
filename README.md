@@ -4,6 +4,7 @@ Uma recriação da clássica animação de "screensaver" do logo da DVD, que qui
 
 ## 🎬 Demonstração
 
+<img src="./.github/Loop Bounce GIF by Meg Lewis.gif" alt="Animação do DVD em ação">
 
 ## 🚀 Funcionalidades
 
@@ -63,4 +64,5 @@ No CSS (dentro da tag `<style>` no `index.html`), modifique as propriedades `wid
 ```
 
 ---
+
 Feito com ❤️ por Duda Bauer.
